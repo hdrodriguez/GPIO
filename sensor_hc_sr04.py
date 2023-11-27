@@ -34,9 +34,9 @@ def cleanup():
     GPIO.cleanup()
 
 if __name__ == "__main__":
+    print("Ejecutando programa")
     try:
         setup()
-
         while True:
             distance = get_distance()
             print(f"Distancia: {distance} cm")
